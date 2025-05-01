@@ -80,10 +80,11 @@
   --error-99: #fffbff;
   --error-100: #ffffff;
   
-  --sidebar-footer-bg: #f7f7f7;
+  --sidebar-footer-bg: #f8f8f8;
   --sidebar-footer-bg-dark: #1b1b1b;
   --sidebar-bg-dark: #1f1f1f;
   --primary-bg: #f7d4a7;
+  --primary-tl: #fff1df;
   --primary-hl: #fff5e5;
   --primary-hl-dark: #604f34;
   --primary-low-and-high: #fadfba;

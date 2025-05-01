@@ -14,3 +14,36 @@
         background-color: var(--primary-high);
     }
 }
+
+.navigation-container {
+    position: relative;
+
+    & .ember-view.category-breadcrumb {
+        margin-right: calc(100% - 400px);
+    }
+
+    & .navigation-controls {
+        position: absolute;
+        right: 0;
+        gap: 10px;
+
+        & .btn.topic-drafts-menu-trigger,
+        & .fk-d-button-tooltip .btn {
+            border-radius: 8px;
+        }
+
+        & .fk-d-button-tooltip {
+            margin-right: 0;
+        }
+    }
+}
+
+.topic-list tr td:first-of-type, .topic-list-item td:first-of-type {
+    transition: box-shadow 0.4s ease;
+}
+
+#d-menu-portals .fk-d-menu.topic-drafts-menu-content  {
+    & .fk-d-menu__inner-content {
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,19 @@
+.chat-channel-icon {
+  color: #54dada !important;
+}
+
+*[data-category-id="32"] svg.d-icon-book-open-reader {
+    fill: #e4dd14 !important;
+}
+
+*[data-category-id="4"] svg.d-icon-code {
+    fill: #38d3d3 !important;
+}
+
+*[data-category-id="42"] svg.d-icon-book {
+    fill: #ccd8df !important;
+}
+
+*[data-category-id="10"] svg.d-icon-coins {
+    fill: #d8337d !important;
+}

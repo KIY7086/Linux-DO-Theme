@@ -3,7 +3,7 @@
 }
 
 .sidebar-wrapper {
-  margin-left: 10px;
+  margin: 0;
   background: none;
   backdrop-filter: blur(4px);
   border-radius: 8px;
@@ -36,7 +36,7 @@
   &.active {
     background-color: var(--primary-95);
     border-left: 3px solid var(--primary-80);
-    height: calc(var(--d-sidebar-row-height) - 0.18em);
+    height: calc(var(--d-sidebar-row-height) - 0.16em);
 
     & .sidebar-section-link-prefix.icon {
       margin-left: -3px;
@@ -44,8 +44,8 @@
   }
 
   & .sidebar-section-link-prefix.icon {
-    font-size: 16px;
-    margin-right: 4.5px;
+    font-size: 18px;
+    margin-right: 6px;
   }
 
   & .sidebar-section-link-suffix.icon.unread svg,

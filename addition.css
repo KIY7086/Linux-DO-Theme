@@ -1,11 +1,11 @@
 .ember-view.discourse-ghsytmy {
-    display: none;
-  }
-  
-  #main-container .global-notice {
-    display: none;
-  }
-  
-  .above-main-container-outlet.search-banner.welcome-banner ~ #main-container .global-notice {
-    display: block;
-  }
+  display: none;
+}
+
+#main-container .global-notice {
+  display: none;
+}
+
+.above-main-container-outlet.search-banner.welcome-banner ~ #main-container .global-notice {
+  display: block;
+}

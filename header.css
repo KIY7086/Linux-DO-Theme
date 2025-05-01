@@ -30,6 +30,17 @@
   & .header-sidebar-toggle button{
     margin-right: 7px;
   }
+
+  & .topic-header-extra .discourse-tags {
+    display: inline-flex;
+    gap: 6px;
+
+    & .discourse-tag.box {
+      padding: 0;
+      margin-right: 0;
+      background: none;
+    }
+  }
 }
 
 .d-header-icons {
