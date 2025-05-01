@@ -1,7 +1,7 @@
 .topic-list {
     & .link-bottom-line .discourse-tag.box {
         border-radius: 4px;
-        background-color: var(--secondary-very-high);
+        background-color: var(--primary-low);
     }
 
     & .d-icon.d-icon-far-square {
@@ -35,11 +35,79 @@
         & .fk-d-button-tooltip {
             margin-right: 0;
         }
+
+        & .btn{
+            background-color: var(--surface-bg);
+            border: 1px solid var(--d-sidebar-border-color);
+            color: var(--primary-very-high);
+        
+            .discourse-no-touch &:hover {
+                background-color: var(--primary-low);
+                color: var(--primary-high);
+        
+                & .d-icon {
+                color: var(--primary-high);
+                }
+            }
+        }
     }
+}
+
+.welcome-banner__wrap {
+    padding: 3em 1em;
 }
 
 .topic-list tr td:first-of-type, .topic-list-item td:first-of-type {
     transition: box-shadow 0.4s ease;
+}
+
+.list-controls .combo-box .combo-box-header {
+    border-radius: 8px;
+    border: 1px solid var(--d-sidebar-border-color);
+}
+
+#navigation-bar {
+    margin-bottom: 0;
+    background-color: var(--surface-bg);
+    border: 1px solid var(--d-sidebar-border-color);
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+
+    & a {
+        padding: 14px 12px;
+        border-radius: 10px;
+
+        &:hover {
+            background: none;
+
+            &::after {
+                background: var(--secondary-high);
+            }
+        }
+
+        &::after {
+            left: 5px;
+            width: calc(100% - 10px);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: var(--d-nav-underline-height);
+        }
+    }
+
+    & li.ember-view {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#list-area .show-more {
+    margin-top: 10px;
+    width: calc(100% + 4px);
+    background-color: var(--background);
 }
 
 #d-menu-portals .fk-d-menu.topic-drafts-menu-content  {

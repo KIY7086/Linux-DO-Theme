@@ -15,6 +15,7 @@
 }
 
 .search-container {
+  background: none;
   filter:
     drop-shadow(0 0.8px 1px rgba(0, 0, 0, 0.08))
     drop-shadow(0 3px 6px rgba(0, 0, 0, 0.06));
@@ -23,6 +24,9 @@
     border-radius: 10px 10px 0px 0px;
     padding: 20px 18px;
     padding-bottom: 0;
+    background-color: #ffffffe7;
+    border: 1px solid var(--d-sidebar-border-color);
+    border-bottom: none;
 
     & .search-page-heading {
       display: none;
@@ -31,6 +35,7 @@
 
   & .search-filters {
     user-select: none;
+    background: none;
 
     & details{
     &>summary {
@@ -60,6 +65,10 @@
 
     & .count-group input[type="number"] {
       border-radius: 8px;
+    }
+
+    & .search-advanced-filters {
+      background: none;
     }
 
     & .search-advanced-options {
@@ -99,6 +108,9 @@
     margin: 0;
     padding: 20px;
     padding-top: 16px;
+    background-color: #ffffffe7;
+    border: 1px solid var(--d-sidebar-border-color);
+    border-top: none;
 
     & .semantic-search__searching {
       margin-left: 0;

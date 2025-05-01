@@ -23,10 +23,6 @@
   color: var(--primary-80);
 }
 
-.list-controls .combo-box .combo-box-header {
-  border-radius: 8px;
-}
-
 html.scheme-dark {
   .alert.alert-info {
     background-color: var(--primary-bg);

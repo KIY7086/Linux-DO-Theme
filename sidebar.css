@@ -3,19 +3,22 @@
 }
 
 .sidebar-wrapper {
-  margin: 0;
+  margin-left: 10px;
   background: none;
   backdrop-filter: blur(4px);
   border-radius: 8px;
-  height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - 20px);
+  box-shadow: 0 0.8px 1px rgba(0, 0, 0, 0.08),
+                0 3px 6px rgba(0, 0, 0, 0.06);
+  height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - 10px);
 
   &:has(.sidebar-container) {
     border: 1px solid var(--d-sidebar-border-color);
   }
 
   & .sidebar-container {
+    background-color: var(--header-sidebar-bg);
     border-right: none;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   & .sidebar-sections {
@@ -37,6 +40,7 @@
     background-color: var(--primary-95);
     border-left: 3px solid var(--primary-80);
     height: calc(var(--d-sidebar-row-height) - 0.16em);
+    margin: 0.08em 0;
 
     & .sidebar-section-link-prefix.icon {
       margin-left: -3px;
@@ -134,8 +138,8 @@
 }
 
 html.scheme-dark {
-  .sidebar-wrapper {
-    background: var(--sidebar-bg-dark);
+  .sidebar-wrapper .sidebar-container {
+    background-color: var(--surface-bg-dark);
   }
 
   .sidebar-section-link-wrapper .sidebar-section-link {

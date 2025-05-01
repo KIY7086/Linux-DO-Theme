@@ -49,8 +49,13 @@ img.avatar, img.prefix-image {
     padding-bottom: 0;
   }
 
+  & .topic-meta-data {
+    padding-top: 18px;
+    padding-bottom: 4px;
+  }
+
   & .regular.contents{
-    background-color: var(--message-bg);
+    background-color: white;
     box-shadow: 
       0 0.3px 0.4px rgba(0, 0, 0, 0.025),
       0 0.9px 1.3px rgba(0, 0, 0, 0.035),
@@ -64,12 +69,10 @@ img.avatar, img.prefix-image {
     
           & .title {
             border-radius: 0px 6px 0px 0px;
-            background-color: var(--primary-low);
           }
     
           & blockquote:last-child {
             border-radius: 0px 0px 8px 0px;
-            background-color: var(--primary-low);
           }
         }
 
@@ -92,6 +95,7 @@ img.avatar, img.prefix-image {
 
     & .post-menu-area {
       padding-left: 0;
+      margin: 0;
       margin-top: 6px;
     }
 
@@ -156,6 +160,10 @@ img.avatar, img.prefix-image {
   right: -8px;
   bottom: calc(100% + 4px);
   border-radius: 6px;
+}
+
+.post-actions {
+  margin: 0;
 }
 
 #topic-progress-wrapper #topic-progress {

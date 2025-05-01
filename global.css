@@ -21,8 +21,20 @@ html {
   background-color: var(--primary-80);
 }
 
+#main {
+  background: var(--background);
+}
+
+#main-outlet {
+  padding-top: 0;
+}
+
 html.scheme-dark {
   .loading-indicator-container .loading-indicator {
     background-color: var(--primary-70);
+  }
+
+  #main {
+    background: transparent;
   }
 }
