@@ -1,0 +1,10 @@
+.ember-view.sidebar-section-link.sidebar-row.channel-2 svg.d-icon.d-icon-d-chat,
+.chat-channel-icon {
+  color: #54dada !important;
+}
+
+.chat-message-separator-date
+  .chat-message-separator__text-container.is-pinned
+  .chat-message-separator__text {
+  background-color: var(--secondary);
+}

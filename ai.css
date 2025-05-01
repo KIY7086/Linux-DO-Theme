@@ -1,0 +1,14 @@
+.persona-llm-selector {
+    & .persona-llm-selector__selection-wrapper {
+        flex-direction: row !important;
+        align-items: center;
+
+        & .btn {
+            align-items: center;
+            justify-content: center;
+            &:focus {
+                border: none;
+            }
+        }
+    }
+}

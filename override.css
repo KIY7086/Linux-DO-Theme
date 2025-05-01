@@ -1,0 +1,26 @@
+:root {
+  --tertiary-med-or-tertiary: var(--primary-80);
+  --d-nav-color--active: var(--primary-70);
+  --tertiary: var(--primary-70);
+  --tertiary-hover: var(--primary-60);
+  --d-selected: var(--primary-90);
+  --tertiary-low-or-tertiary-high: var(--primary-low-and-high);
+}
+
+html {
+  font-family: '霞鹜新晰黑' !important;
+}
+
+.btn {
+  transition: background-color ease 0.24s;
+}
+
+.loading-indicator-container .loading-indicator {
+  background-color: var(--primary-80);
+}
+
+html.scheme-dark {
+  .loading-indicator-container .loading-indicator {
+    background-color: var(--primary-70);
+  }
+}
