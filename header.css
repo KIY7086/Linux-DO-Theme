@@ -4,12 +4,11 @@
 }
 
 .d-header {
-  background-color: var(--header-sidebar-bg);
+  background-color: var(--header-bg);
   border-radius: 10px;
   backdrop-filter: blur(14px);
   border: 1px solid var(--d-sidebar-border-color);
-  box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.08),
-              0 2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--panel-shadow);
 
   & .title {
     padding: 6px;
@@ -69,7 +68,9 @@
 }
 
 html.scheme-dark .d-header {
-  background-color: var(--surface-bg-dark);
+  background-color: var(--header-bg-dark);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--panel-shadow-dark);
 
   & .title:hover {
     background-color: #ffffff1a;

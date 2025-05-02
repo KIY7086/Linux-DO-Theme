@@ -5,7 +5,7 @@
   --tertiary-rgb: 230, 157, 0;
   --tertiary-hover: var(--primary-60);
   --d-selected: var(--primary-90);
-  --tertiary-low-or-tertiary-high: var(--primary-low-and-high);
+  --tertiary-low-or-tertiary-high: var(--secondary-very-high);
   --tertiary-low: var(--primary-tl);
 }
 
@@ -14,7 +14,18 @@ html {
 }
 
 .btn {
-  transition: background-color ease 0.24s;
+  transition: background-color ease 0.24s,
+              background-image ease 0.24s,
+              color ease 0.24s;
+
+  & .d-icon {
+    transition: background-color ease 0.24s,
+                color ease 0.24s;
+  }
+}
+
+.wrap {
+  --d-wrap-padding-h: 10px;
 }
 
 .loading-indicator-container .loading-indicator {
@@ -27,6 +38,10 @@ html {
 
 #main-outlet {
   padding-top: 0;
+}
+
+body.has-sidebar-page #main-outlet-wrapper {
+  gap: 0 12px !important;
 }
 
 html.scheme-dark {

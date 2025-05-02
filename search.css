@@ -16,9 +16,7 @@
 
 .search-container {
   background: none;
-  filter:
-    drop-shadow(0 0.8px 1px rgba(0, 0, 0, 0.08))
-    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.06));
+  filter: var(--panel-shadow-filter);
 
   & .search-header {
     border-radius: 10px 10px 0px 0px;

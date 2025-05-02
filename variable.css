@@ -90,9 +90,34 @@
   --avatar-border: #ffd59f;
   --message-bg: #f8f8f8;
   --message-bg-dark: #1d1c1c;
-  --header-sidebar-bg: #ffffff73;
-  --header-sidebar-bg-dark: #00000056;
-  --surface-bg: #ffffff;
+  --header-bg: #ffffff73;
+  --header-bg-dark: #00000081;
+  --surface-bg: #fafafa;
+  --surface-bg-dark: #181818;
   --read-state-bg: #eba818c4;
-  --background: #f8f8f8;
+  --background: #f7f7f7;
+  --background-dark: #222222;
+
+  --button-shadow: 
+        0 1px 1px #0000001a,
+        0.3px 1px 2px #00000014,
+        inset 0 1px 1px #00000004;
+  --button-shadow-dark: 
+        0 2px 8px #0000004d,
+        0 1px 4px #00000033,
+        inset 0 1px 1px #00000016;
+  --panel-shadow: 
+        0 1px 2px #00000014,
+        0 3px 7px #0000000f;
+  --panel-shadow-filter: 
+        drop-shadow(0 1px 2px #00000014)
+        drop-shadow(0 3px 7px #0000000f);
+  --panel-shadow-dark: 
+        0 1.2px 1.5px #ffffff0d,
+        0 5px 8px #00000040,
+        0 8px 16px #00000026;
+  --panel-shadow-dark-filter: 
+        drop-shadow(0 1.2px 1.5px #ffffff0d)
+        drop-shadow(0 5px 7px #00000040)
+        drop-shadow(0 6px 9px #00000026); 
 }
