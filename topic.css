@@ -265,23 +265,68 @@ img.avatar, img.prefix-image {
   }
 }
 
-.more-topics__container .more-topics__browse-more {
-  font-size: 18px;
-  font-family: inherit;
+.more-topics__container {
+  & .nav.nav-pills>li a,
+  & .nav.nav-pills>li button {
+    & .d-icon {
+      margin-right: 6px;
+    }
 
-  & .badge-category__wrapper {
-    font-size: 18px;
-    padding: 0 6px;
-    gap: 6px;
+    &:active {
+      background: none;
+    }
 
-    & .badge-category__icon {
-      font-size: 26px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      right: 0;
+      height: var(--d-nav-underline-height);
+    }
 
-      & svg {
-        margin-right: 0;
+    &:hover{
+      box-shadow: none;
+
+      &::after {
+        background-color: var(--secondary-high);
+      }
+    }
+
+    &.active{
+      box-shadow: none;
+      position: relative;
+      padding: 0.8em 0.33em;
+
+      & .d-icon {
+        margin-right: 5px;
       }
     }
   }
+
+  & .more-topics__browse-more {
+    font-size: 18px;
+    font-family: inherit;
+  
+    & .badge-category__wrapper {
+      font-size: 18px;
+      padding: 0 6px;
+      gap: 6px;
+  
+      & .badge-category__icon {
+        font-size: 26px;
+  
+        & svg {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.ember-view.pinned-button .reason {
+  width: 100%;
+  justify-content: space-between;
 }
 
 html.scheme-dark {

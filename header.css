@@ -1,3 +1,17 @@
+.discourse-no-touch .drop-down-mode .d-header-icons {
+  & .btn-flat {
+    transition: box-shadow 0.3s ease,
+                background 0.4s ease;
+  }
+
+  & .active .icon,
+  & .header-color-scheme-toggle .-expanded {
+    border: 1px solid var(--d-sidebar-border-color);
+    box-shadow:var(--pebble-shadow);
+    background-color: var(--surface-bg);
+  }
+}
+
 .d-header-wrap {
   padding: 10px;
   padding-top: 12px;
@@ -23,6 +37,11 @@
     & #site-logo {
       height: calc(var(--d-logo-height) - 4px);
     }
+  }
+
+  #current-user img.avatar {
+    border: none !important;
+    transform: scale(1.1);
   }
 
   & .btn, .btn-flat, .btn-icon {

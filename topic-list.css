@@ -155,8 +155,7 @@
             background: none;
 
             &::after {
-                background-color: var(--tertiary);
-                opacity: 0.7;
+                background-color: var(--secondary-high);
             }
         }
     }

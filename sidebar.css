@@ -41,8 +41,9 @@
     border-left: 3px solid var(--ld-80);
     height: calc(var(--d-sidebar-row-height) - 0.2em);
     width: calc(100% - 0.1em);
-    border: 0.1em solid rgba(var(--tertiary-rgb), 0.21);
-    box-sizing: content-box;
+    outline: 0.1em solid rgba(var(--tertiary-rgb), 0.21);
+    margin: 0.1em 0;
+    box-sizing: border-box;
     color: var(--secondary-low);
 
     & .sidebar-section-link-prefix.icon {
