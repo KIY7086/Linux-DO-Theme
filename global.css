@@ -40,9 +40,14 @@ html {
 
 #main-outlet {
   padding-top: 0;
+
+  &:has(.topic-above-post-stream-outlet) {
+    padding: 14px 10px;
+    padding-bottom: 0;
+  }
 }
 
-body.has-sidebar-page #main-outlet-wrapper {
+body.has-sidebar-page #main-outlet-wrapper:not(:has(.topic-above-post-stream-outlet)) {
   gap: 0 12px !important;
 }
 

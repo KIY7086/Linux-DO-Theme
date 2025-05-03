@@ -329,6 +329,16 @@ img.avatar, img.prefix-image {
   justify-content: space-between;
 }
 
+.timeline-container .topic-timeline {
+  & .timeline-handle {
+    background-color: var(--ld-bg);
+  }
+
+  & .timeline-scrollarea {
+    border-color: var(--ld-bg);
+  }
+}
+
 html.scheme-dark {
   #topic-title {
     & .badge-category__wrapper,
