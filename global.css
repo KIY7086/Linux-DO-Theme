@@ -1,12 +1,14 @@
 :root {
-  --tertiary-med-or-tertiary: var(--primary-80);
-  --d-nav-color--active: var(--primary-70);
-  --tertiary: var(--primary-70);
+  --tertiary-med-or-tertiary: var(--ld-80);
+  --d-nav-color--active: var(--ld-70);
+  --tertiary: var(--ld-70);
   --tertiary-rgb: 230, 157, 0;
-  --tertiary-hover: var(--primary-60);
-  --d-selected: var(--primary-90);
+  --tertiary-hover: var(--ld-60);
+  --d-selected: var(--ld-90);
   --tertiary-low-or-tertiary-high: var(--secondary-very-high);
-  --tertiary-low: var(--primary-tl);
+  --tertiary-low: var(--ld-tl);
+  --heading-font-family: '霞鹜新晰黑';
+  --font-family: '霞鹜新晰黑';
 }
 
 html {
@@ -29,7 +31,7 @@ html {
 }
 
 .loading-indicator-container .loading-indicator {
-  background-color: var(--primary-80);
+  background-color: var(--ld-80);
 }
 
 #main {
@@ -46,7 +48,7 @@ body.has-sidebar-page #main-outlet-wrapper {
 
 html.scheme-dark {
   .loading-indicator-container .loading-indicator {
-    background-color: var(--primary-70);
+    background-color: var(--ld-70);
   }
 
   #main {

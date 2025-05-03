@@ -3,13 +3,19 @@ img.avatar, img.prefix-image {
 }
 
 #topic-title {
+  & .topic-category {
+    margin-top: 2px;
+  }
+
   & .discourse-tags {
     & .discourse-tag.box {
       margin-right: 0;
-      margin-left: -1.5px;
       padding: 0 4px;
       background: none;
-      border: 1.5px solid var(--secondary-high);
+      border: 1px solid var(--primary-300);
+      border-right: none;
+      background-color: var(--surface-bg);
+      box-shadow: var(--small-shadow);
 
       &:first-child {
         border-radius: 6px 0px 0px 6px;
@@ -21,13 +27,16 @@ img.avatar, img.prefix-image {
 
       &:last-child {
         border-radius: 0px 6px 6px 0px;
+        border-right: 1px solid var(--primary-300);
       }
     }
   }
 
-  .badge-category__wrapper {
+  & .badge-category__wrapper {
     padding: 0 4px;
-    background-color: var(--secondary-very-high);
+    background-color: var(--surface-bg);
+    border: 1px solid var(--primary-300);
+    box-shadow: var(--small-shadow);
     border-radius: 6px;
   }
 }
@@ -61,11 +70,12 @@ img.avatar, img.prefix-image {
       0 0.9px 1.3px rgba(0, 0, 0, 0.035),
       0 1.8px 2.5px rgba(0, 0, 0, 0.045);
     border-radius: 8px;
+    outline: 1px solid var(--d-sidebar-border-color);
 
     & .cooked {
       & aside{
         &.quote {
-          margin-left: -10px;
+          margin-left: -12px;
     
           & .title {
             border-radius: 0px 6px 0px 0px;
@@ -82,14 +92,29 @@ img.avatar, img.prefix-image {
         }
       }
 
+      & blockquote {
+        border-radius: 0px 6px 6px 0px;
+        margin-left: -12px;
+      }
+
       &>*:nth-last-child(2) {
         margin-bottom: 0;
       }
 
-      .topic-owner &::after {
+      .topic-owner .contents>&::after {
         content: "Oʀɪɢɪɴᴀʟ Pᴏꜱᴛᴇʀ";
         margin-right: 6px;
-        color: var(--primary-70);
+        color: var(--ld-70);
+      }
+    }
+
+    & .lightbox-wrapper {
+      & .lightbox {
+        border-radius: 6px;
+
+        &:hover .meta {
+          border-radius: 0px 0px 6px 6px;
+        }
       }
     }
 
@@ -127,6 +152,14 @@ img.avatar, img.prefix-image {
         padding: 12px;
         box-sizing: border-box;
         border-radius: 8px;
+
+        &[aria-expanded="true"]>span{
+          color: var(--primary-very-high);
+        }
+
+        &:hover[aria-expanded="false"] {
+          background: none;
+        }
       }
 
       & .actions .discourse-reactions-actions,
@@ -167,11 +200,11 @@ img.avatar, img.prefix-image {
 }
 
 #topic-progress-wrapper #topic-progress {
-  border: 1px solid var(--primary-bg);
+  border: 1px solid var(--ld-bg);
   border-radius: 6px;
 
   & .bg {
-    background-color: var(--primary-bg);
+    background-color: var(--ld-bg);
   }
 }
 
@@ -186,6 +219,10 @@ img.avatar, img.prefix-image {
   & .create {
     text-wrap: nowrap;
   }
+}
+
+.topic-timer-info {
+  border-top: none;
 }
 
 .topic-timer-info .topic-timer-heading {
@@ -248,17 +285,26 @@ img.avatar, img.prefix-image {
 }
 
 html.scheme-dark {
+  #topic-title {
+    & .badge-category__wrapper,
+    & .discourse-tags .discourse-tag.box {
+      background-color: var(--surface-bg-dark);
+      border-color: var(--primary-200);
+      box-shadow: var(--small-shadow-dark);
+    }
+  }
+
   .topic-body .regular.contents {
     background-color: var(--message-bg-dark);
   }
 
   .timeline-container .topic-timeline {
     & .timeline-handle {
-      background-color: var(--primary-80);
+      background-color: var(--ld-80);
     }
 
     & .timeline-scrollarea {
-      border-color: var(--primary-80);
+      border-color: var(--ld-80);
     }
   }
 }

@@ -1,17 +1,31 @@
 .search-menu .search-input,
 .search-menu-container .search-input {
   border-radius: 10px;
+  background-color: var(--surface-bg);
+  border: none;
+  outline: 2px solid var(--primary-low);
+  outline-offset: -2px;
+  box-shadow: var(--button-shadow);
+  transition: outline 0.3s ease;
+
+  &:focus-within {
+    box-shadow: var(--panel-shadow);
+  }
+}
+
+.welcome-banner .btn.search-icon:not(.has-search-button-text) svg{
+  color: var(--primary-medium);
 }
 
 .search-container .search-cta:hover {
-  background-color: var(--primary-60);
+  background-color: var(--ld-60);
 }
 
 .search-menu .search-link:focus,
 .search-menu .search-link:hover,
 .search-menu-container .search-link:focus,
 .search-menu-container .search-link:hover {
-  background-color: var(--primary-hl);
+  background-color: var(--ld-hl);
 }
 
 .search-container {
@@ -170,13 +184,18 @@
 
 html.scheme-dark {
   .search-container .search-cta:hover {
-    background-color: var(--primary-80);
+    background-color: var(--ld-80);
+  }
+
+  .search-menu .search-input,
+  .search-menu-container .search-input {
+    background-color: var(--surface-bg-dark);
   }
 
   .search-menu .search-link:focus,
   .search-menu .search-link:hover,
   .search-menu-container .search-link:focus,
   .search-menu-container .search-link:hover {
-    background-color: var(--primary-hl-dark);
+    background-color: var(--ld-hl-dark);
   }
 }
