@@ -7,7 +7,9 @@
   background: none;
   backdrop-filter: blur(4px);
   border-radius: 10px;
-  height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - 10px);
+  height: calc(
+    var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - 12px
+  );
 
   &:has(.sidebar-container) {
     border: 1px solid var(--d-sidebar-border-color);
@@ -74,7 +76,7 @@
   padding-bottom: 0.35em !important;
 
   &[data-section-name="chat-dms"],
-  &[data-section-name="chat-channels"]{
+  &[data-section-name="chat-channels"] {
     display: none;
   }
 
@@ -114,7 +116,7 @@
     & .sidebar-section-header-caret {
       margin-right: 3px;
 
-      .d-icon{
+      .d-icon {
         color: var(--primary-high);
 
         &:hover {
@@ -142,7 +144,11 @@
     padding-bottom: 10px;
 
     &::before {
-      background: linear-gradient(to bottom, transparent, var(--sidebar-footer-bg));
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--sidebar-footer-bg)
+      );
       top: -2em;
       height: 2em;
     }
@@ -223,7 +229,11 @@ html.scheme-dark {
     background: var(--sidebar-footer-bg-dark);
 
     & .sidebar-footer-container::before {
-      background: linear-gradient(to bottom, transparent, var(--sidebar-footer-bg-dark));
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--sidebar-footer-bg-dark)
+      );
     }
   }
 }

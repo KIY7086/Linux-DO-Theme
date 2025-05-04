@@ -7,22 +7,24 @@
   --d-selected: var(--ld-90);
   --tertiary-low-or-tertiary-high: var(--secondary-very-high);
   --tertiary-low: var(--ld-tl);
-  --heading-font-family: '霞鹜新晰黑';
-  --font-family: '霞鹜新晰黑';
+  --heading-font-family: "霞鹜新晰黑";
+  --font-family: "霞鹜新晰黑";
 }
 
 html {
-  font-family: '霞鹜新晰黑' !important;
+  font-family: "霞鹜新晰黑" !important;
 }
 
 .btn {
-  transition: background-color ease 0.24s,
-              background-image ease 0.24s,
-              color ease 0.24s;
+  transition:
+    background-color ease 0.24s,
+    background-image ease 0.24s,
+    color ease 0.24s;
 
   & .d-icon {
-    transition: background-color ease 0.24s,
-                color ease 0.24s;
+    transition:
+      background-color ease 0.24s,
+      color ease 0.24s;
   }
 }
 
@@ -47,7 +49,27 @@ html {
   }
 }
 
-body.has-sidebar-page #main-outlet-wrapper:not(:has(.topic-above-post-stream-outlet)) {
+.username {
+  display: flex !important;
+  align-items: center;
+  margin-left: 1px;
+  gap: min(0.2em, 4px);
+
+  &::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    content: "";
+    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hdC1zaWduLWljb24gbHVjaWRlLWF0LXNpZ24iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTYgOHY1YTMgMyAwIDAgMCA2IDB2LTFhMTAgMTAgMCAxIDAtNCA4Ii8+PC9zdmc+");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: currentColor;
+    opacity: 0.6;
+  }
+}
+
+body.has-sidebar-page
+  #main-outlet-wrapper:not(:has(.topic-above-post-stream-outlet)) {
   gap: 0 12px !important;
 }
 

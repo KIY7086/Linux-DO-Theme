@@ -1,13 +1,14 @@
 .discourse-no-touch .drop-down-mode .d-header-icons {
   & .btn-flat {
-    transition: box-shadow 0.3s ease,
-                background 0.4s ease;
+    transition:
+      box-shadow 0.3s ease,
+      background 0.4s ease;
   }
 
   & .active .icon,
   & .header-color-scheme-toggle .-expanded {
     border: 1px solid var(--d-sidebar-border-color);
-    box-shadow:var(--pebble-shadow);
+    box-shadow: var(--pebble-shadow);
     background-color: var(--surface-bg);
   }
 }
@@ -44,11 +45,13 @@
     transform: scale(1.1);
   }
 
-  & .btn, .btn-flat, .btn-icon {
+  & .btn,
+  .btn-flat,
+  .btn-icon {
     border-radius: 6px;
   }
 
-  & .header-sidebar-toggle button{
+  & .header-sidebar-toggle button {
     margin-right: 7px;
   }
 
