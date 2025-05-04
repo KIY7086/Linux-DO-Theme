@@ -30,6 +30,7 @@
       }
 
       & .user-profile-avatar {
+        margin-left: 6px;
         align-self: center;
         & .avatar {
           border: none !important;
@@ -41,6 +42,38 @@
         padding: 0;
         display: flex;
         align-items: center;
+      }
+
+      & .controls {
+        & li:not(:has(button)) {
+          display: none;
+        }
+
+        & .btn {
+          align-items: center;
+          border: 1px solid var(--d-sidebar-border-color);
+          border-radius: 8px;
+          box-shadow: var(--button-shadow);
+
+          &.btn-default {
+            color: var(--primary-very-high);
+            background-color: var(--surface-bg);
+
+            & svg,
+            & span {
+              color: var(--primary-very-high);
+            }
+
+            &:hover {
+              background-color: var(--primary-low);
+
+              & svg,
+              & span {
+                color: var(--primary-very-high);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -67,6 +100,20 @@
       border-radius: 8px 8px 0px 0px;
       border-bottom: none;
       box-shadow: var(--button-shadow-without-bottom);
+
+      & ul > li {
+        &:first-child a {
+          border-radius: 6px 0px 0px 0px;
+        }
+
+        &:last-child a {
+          border-radius: 0px 6px 0px 0px;
+        }
+
+        & a {
+          padding: 0.65em 0.75em;
+        }
+      }
     }
 
     .user-navigation-secondary {
@@ -82,6 +129,16 @@
     border-radius: 8px;
     background-color: var(--surface-bg);
     margin-top: 10px;
+
+    & ul > li {
+      &:first-child a {
+        border-radius: 6px 0px 0px 6px;
+      }
+
+      &:last-child a {
+        border-radius: 0px 6px 6px 0px;
+      }
+    }
 
     & .navigation-controls {
       margin: 6px;
@@ -155,6 +212,23 @@ html.scheme-dark {
       & .horizontal-overflow-nav__scroll-left,
       & .horizontal-overflow-nav__scroll-right {
         background-color: var(--surface-bg-dark);
+      }
+    }
+  }
+
+  .user-main {
+    & .about .details,
+    & .about.collapsed-info .details {
+      & .primary .controls .btn {
+        box-shadow: var(--button-shadow-dark);
+
+        &.btn-default {
+          background-color: var(--surface-bg-dark);
+
+          &:hover {
+            background-color: var(--primary-low);
+          }
+        }
       }
     }
   }
