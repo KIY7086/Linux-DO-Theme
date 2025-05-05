@@ -1,0 +1,187 @@
+.topic-list {
+  & .link-bottom-line .discourse-tag.box {
+    border-radius: 4px;
+    background-color: var(--primary-low);
+  }
+
+  & .d-icon.d-icon-far-square {
+    color: transparent;
+    width: 0.8em;
+    height: 0.8em;
+    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tZXNzYWdlLWNpcmNsZS1xdWVzdGlvbi1pY29uIGx1Y2lkZS1tZXNzYWdlLWNpcmNsZS1xdWVzdGlvbiI+PHBhdGggZD0iTTcuOSAyMEE5IDkgMCAxIDAgNCAxNi4xTDIgMjJaIi8+PHBhdGggZD0iTTkuMDkgOWEzIDMgMCAwIDEgNS44MyAxYzAgMi0zIDMtMyAzIi8+PHBhdGggZD0iTTEyIDE3aC4wMSIvPjwvc3ZnPg==");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--primary-high);
+  }
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & .category-breadcrumb {
+    gap: 8px;
+
+    & > li {
+      margin-right: 0;
+
+      & details {
+        margin-right: 0;
+      }
+
+      & .combo-box .combo-box-header {
+        background-color: var(--surface-bg);
+        box-shadow: var(--button-shadow);
+        border: 1px solid transparent;
+        outline: 1px solid var(--d-sidebar-border-color);
+        outline-offset: -1px;
+        transition:
+          background-color ease 0.24s,
+          color ease 0.24s,
+          border ease 0.24s,
+          outline ease 0.24s;
+
+        & .selected-name {
+          color: var(--primary);
+        }
+
+        & .select-kit-header-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          & .caret-icon {
+            padding: 0;
+          }
+        }
+
+        &:hover {
+          background-color: var(--primary-low);
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  & .select-kit.combo-box.tag-drop.has-selection .tag-drop-header {
+    border: 1px solid transparent;
+    outline: 1px solid var(--d-nav-border-color--active);
+    transition:
+      background-color ease 0.24s,
+      color ease 0.24s,
+      border ease 0.24s,
+      outline ease 0.24s;
+    &:active {
+      outline: 2px solid var(--tertiary);
+    }
+  }
+
+  & .navigation-controls {
+    position: absolute;
+    right: 0;
+    gap: 8px;
+
+    & .btn.topic-drafts-menu-trigger,
+    & .fk-d-button-tooltip .btn {
+      border-radius: 8px;
+    }
+
+    & button,
+    & .fk-d-button-tooltip {
+      margin: 0;
+    }
+
+    & .btn {
+      border-radius: 8px;
+      background-color: var(--surface-bg);
+      border: 1px solid var(--d-sidebar-border-color);
+      color: var(--primary);
+      box-shadow: var(--button-shadow);
+
+      .discourse-no-touch &:hover {
+        background-color: var(--primary-low);
+        color: var(--primary);
+
+        & .d-icon {
+          color: var(--primary);
+        }
+      }
+
+      & .d-icon {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.welcome-banner__wrap {
+  padding: 2.5em 1em;
+}
+
+.topic-list tr td:first-of-type,
+.topic-list-item td:first-of-type {
+  transition: box-shadow 0.4s ease;
+}
+
+.list-controls .combo-box .combo-box-header {
+  border-radius: 8px;
+  border: 1px solid var(--d-sidebar-border-color);
+}
+
+#navigation-bar {
+  margin-bottom: 0;
+  background-color: var(--surface-bg);
+  border: 1px solid var(--d-sidebar-border-color);
+  border-radius: 8px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0;
+  box-shadow: var(--button-shadow);
+
+  & a {
+    padding: 14px 12px;
+    transition:
+      background 0.24s ease-in-out,
+      color 0.3s ease;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  & li.ember-view {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#d-menu-portals .fk-d-menu.topic-drafts-menu-content {
+  & .fk-d-menu__inner-content {
+    margin-left: 100px;
+  }
+}
+
+html.scheme-dark {
+  #navigation-bar {
+    background-color: var(--surface-bg-dark);
+    box-shadow: var(--button-shadow-dark);
+  }
+
+  .navigation-container {
+    & .navigation-controls .btn {
+      background-color: var(--surface-bg-dark);
+      box-shadow: var(--button-shadow-dark);
+    }
+
+    & .category-breadcrumb > li .combo-box .combo-box-header {
+      background-color: var(--surface-bg-dark);
+      box-shadow: var(--button-shadow-dark);
+
+      &:hover {
+        background-color: var(--primary-low);
+        color: var(--primary-high);
+      }
+    }
+  }
+}

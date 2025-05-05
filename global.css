@@ -51,7 +51,7 @@ html {
 
 .username {
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
   margin-left: 1px;
   gap: min(0.2em, 4px);
 
