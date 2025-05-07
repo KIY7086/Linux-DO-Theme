@@ -17,9 +17,9 @@ html {
 
 .btn {
   transition:
-    background-color ease 0.24s,
-    background-image ease 0.24s,
-    color ease 0.24s;
+    background-color ease-in-out 0.24s,
+    background-image ease-in-out 0.24s,
+    color ease-in-out 0.24s;
 
   & .d-icon {
     transition:
@@ -36,7 +36,7 @@ html {
   background-color: var(--ld-80);
 }
 
-#main {
+body {
   background: var(--background);
 }
 
@@ -73,12 +73,27 @@ body.has-sidebar-page
   gap: 0 12px !important;
 }
 
+img.avatar,
+img.prefix-image {
+  border: 1px solid var(--avatar-border) !important;
+  background-color: var(--background) !important;
+}
+
 html.scheme-dark {
   .loading-indicator-container .loading-indicator {
     background-color: var(--ld-70);
   }
 
-  #main {
+  body {
     background: transparent;
+  }
+
+  img.avatar,
+  img.prefix-image {
+    background-color: var(--background-dark) !important;
+  }
+
+  .select-kit .select-kit-row.is-selected {
+    background-color: var(--ld-50);
   }
 }

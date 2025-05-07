@@ -87,8 +87,7 @@
       border-radius: 8px;
     }
 
-    & button,
-    & .fk-d-button-tooltip {
+    &>* {
       margin: 0;
     }
 
@@ -141,6 +140,7 @@
 
   & a {
     padding: 14px 12px;
+    border-radius: 6px;
     transition:
       background 0.24s ease-in-out,
       color 0.3s ease;

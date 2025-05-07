@@ -72,13 +72,25 @@
   }
 }
 
-.sidebar-section-wrapper {
-  padding-bottom: 0.35em !important;
-
-  &[data-section-name="chat-dms"],
-  &[data-section-name="chat-channels"] {
+.sidebar-sections:not(.chat-panel) {
+  & .sidebar-section-wrapper[data-section-name="chat-dms"],
+  & .sidebar-section-wrapper[data-section-name="chat-channels"] {
     display: none;
   }
+}
+
+.sidebar-wrapper .sidebar-container:has( .sidebar-sections.chat-panel) {
+  padding-top: 6px;
+  padding-right: 10px;
+
+  & .sidebar-section-wrapper {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+  }
+}
+
+.sidebar-section-wrapper {
+  padding-bottom: 0.35em !important;
 
   & .sidebar-section-content {
     display: flex;

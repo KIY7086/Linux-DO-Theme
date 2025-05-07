@@ -18,3 +18,15 @@
 #list-area .show-more {
     position: static;
 }
+
+.sticky-header .topic-list-header {
+    background: none;
+
+    & .topic-list-data.bulk-select {
+        padding-left: 0.67em;
+    }
+
+    & .topic-list-data.default {
+        padding: 0;
+    }
+}
