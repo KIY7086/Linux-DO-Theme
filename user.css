@@ -54,25 +54,6 @@
           border: 1px solid var(--d-sidebar-border-color);
           border-radius: 8px;
           box-shadow: var(--button-shadow);
-
-          &.btn-default {
-            color: var(--primary-very-high);
-            background-color: var(--surface-bg);
-
-            & svg,
-            & span {
-              color: var(--primary-very-high);
-            }
-
-            &:hover {
-              background-color: var(--primary-low);
-
-              & svg,
-              & span {
-                color: var(--primary-very-high);
-              }
-            }
-          }
         }
       }
     }
@@ -221,14 +202,6 @@ html.scheme-dark {
     & .about.collapsed-info .details {
       & .primary .controls .btn {
         box-shadow: var(--button-shadow-dark);
-
-        &.btn-default {
-          background-color: var(--surface-bg-dark);
-
-          &:hover {
-            background-color: var(--primary-low);
-          }
-        }
       }
     }
   }

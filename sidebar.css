@@ -79,7 +79,7 @@
   }
 }
 
-.sidebar-wrapper .sidebar-container:has( .sidebar-sections.chat-panel) {
+.sidebar-wrapper .sidebar-container:has(.sidebar-sections.chat-panel) {
   padding-top: 6px;
   padding-right: 10px;
 

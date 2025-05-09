@@ -1,23 +1,29 @@
 #topic-title {
   & .topic-category {
-    margin-top: 2px;
+    margin-top: 6px;
   }
 
   & .discourse-tags {
+    gap: 0;
+
     & .discourse-tag.box {
       margin-right: 0;
       padding: 0 4px;
       background: none;
-      border: 1px solid var(--primary-300);
-      border-right: none;
+      border-top: 1px solid var(--primary-300);
+      border-bottom: 1px solid var(--primary-300);
       background-color: var(--surface-bg);
       box-shadow: var(--small-shadow);
+      border-radius: 0;
+      font-size: var(--font-0);
 
       &:first-child {
         border-radius: 6px 0px 0px 6px;
+        border-left: 1px solid var(--primary-300);
 
         &:last-child {
           border-radius: 6px;
+          border-right: 1px solid var(--primary-300);
         }
       }
 
@@ -35,6 +41,13 @@
     box-shadow: var(--small-shadow);
     border-radius: 6px;
   }
+}
+
+.topic-map.--op {
+  border-top: none;
+  padding-left: calc(
+    var(--topic-body-width-padding) + var(--topic-avatar-width) + 4px
+  );
 }
 
 .topic-list-item td:first-of-type,
@@ -203,8 +216,13 @@
 }
 
 .small-action.topic-post-visited .topic-post-visited-line {
-  margin-bottom: 10px;
+  margin-top: 18px;
+  margin-bottom: 2px;
   opacity: 0.8;
+
+  & span.topic-post-visited-message {
+    background-color: var(--background);
+  }
 }
 
 .with-topic-progress {
@@ -355,11 +373,11 @@
 
 .timeline-container .topic-timeline {
   & .timeline-handle {
-    background-color: var(--ld-bg);
+    background-color: var(--ld-90);
   }
 
   & .timeline-scrollarea {
-    border-color: var(--ld-bg);
+    border-color: var(--ld-90);
   }
 }
 
@@ -385,6 +403,14 @@ html.scheme-dark {
 
     & .timeline-scrollarea {
       border-color: var(--ld-80);
+    }
+  }
+
+  .small-action.topic-post-visited .topic-post-visited-line {
+    opacity: 1;
+
+    & span.topic-post-visited-message {
+      background-color: var(--background-dark);
     }
   }
 }

@@ -1,20 +1,3 @@
-.topic-list {
-  & .link-bottom-line .discourse-tag.box {
-    border-radius: 4px;
-    background-color: var(--primary-low);
-  }
-
-  & .d-icon.d-icon-far-square {
-    color: transparent;
-    width: 0.8em;
-    height: 0.8em;
-    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tZXNzYWdlLWNpcmNsZS1xdWVzdGlvbi1pY29uIGx1Y2lkZS1tZXNzYWdlLWNpcmNsZS1xdWVzdGlvbiI+PHBhdGggZD0iTTcuOSAyMEE5IDkgMCAxIDAgNCAxNi4xTDIgMjJaIi8+PHBhdGggZD0iTTkuMDkgOWEzIDMgMCAwIDEgNS44MyAxYzAgMi0zIDMtMyAzIi8+PHBhdGggZD0iTTEyIDE3aC4wMSIvPjwvc3ZnPg==");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--primary-high);
-  }
-}
-
 .navigation-container {
   display: flex;
   flex-direction: column;
@@ -87,7 +70,7 @@
       border-radius: 8px;
     }
 
-    &>* {
+    & > * {
       margin: 0;
     }
 
@@ -116,11 +99,6 @@
 
 .welcome-banner__wrap {
   padding: 2.5em 1em;
-}
-
-.topic-list tr td:first-of-type,
-.topic-list-item td:first-of-type {
-  transition: box-shadow 0.4s ease;
 }
 
 .list-controls .combo-box .combo-box-header {
