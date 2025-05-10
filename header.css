@@ -89,12 +89,25 @@
   }
 }
 
-html.scheme-dark .d-header {
-  background-color: var(--header-bg-dark);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--panel-shadow-dark);
+html.scheme-dark {
+  .d-header {
+    background-color: var(--header-bg-dark);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--panel-shadow-dark);
 
-  & .title:hover {
-    background-color: #ffffff1a;
+    & .title:hover {
+      background-color: #ffffff1a;
+    }
+  }
+
+  &.discourse-no-touch .drop-down-mode .d-header-icons {
+    & .active .icon,
+    & .header-color-scheme-toggle .-expanded {
+      background-color: var(--surface-bg-dark);
+      box-shadow: var(--pebble-shadow-dark);
+      border: none;
+      width: calc(2.2857em + 2px);
+      height: calc(2.2857em + 1px);
+    }
   }
 }

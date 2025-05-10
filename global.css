@@ -9,49 +9,6 @@
   --tertiary-low: var(--ld-tl);
 }
 
-.btn {
-  border-radius: 6px;
-
-  transition:
-    background-color ease-in-out 0.24s,
-    background-image ease-in-out 0.24s,
-    color ease-in-out 0.24s;
-
-  & .d-icon {
-    transition:
-      background-color ease 0.24s,
-      color ease 0.24s;
-  }
-
-  &.btn-default,
-  &.btn-icon-text.show-summary {
-    color: var(--primary-very-high);
-    background-color: var(--surface-bg);
-    border: 1px solid var(--d-sidebar-border-color);
-
-    & svg.d-icon,
-    & span {
-      color: var(--primary-very-high);
-    }
-
-    &:hover {
-      background-color: var(--primary-low);
-
-      & svg.d-icon,
-      & span {
-        color: var(--primary-very-high);
-      }
-    }
-  }
-}
-
-.dropdown-menu {
-  & .btn-default,
-  & .btn-icon-text {
-    border: none;
-  }
-}
-
 .wrap {
   --d-wrap-padding-h: 10px;
 }
@@ -160,6 +117,12 @@ img.prefix-image {
   background-color: var(--background) !important;
 }
 
+.topic-list-item.visited .topic-list-data a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: var(--primary);
+}
+
 html.scheme-dark {
   .loading-indicator-container .loading-indicator {
     background-color: var(--ld-70);
@@ -178,13 +141,10 @@ html.scheme-dark {
     background-color: var(--ld-50);
   }
 
-  .btn {
-    &.btn-default {
-      background-color: var(--surface-bg-dark);
-
-      &:hover {
-        background-color: var(--primary-low);
-      }
-    }
+  .user-menu .quick-access-panel li.unread,
+  .user-menu .quick-access-panel li.pending,
+  .user-notifications-list li.unread,
+  .user-notifications-list li.pending {
+    background-color: var(--ld-30);
   }
 }

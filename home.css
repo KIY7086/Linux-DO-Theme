@@ -16,14 +16,13 @@
       & .combo-box .combo-box-header {
         background-color: var(--surface-bg);
         box-shadow: var(--button-shadow);
-        border: 1px solid transparent;
+        border: none;
         outline: 1px solid var(--d-sidebar-border-color);
         outline-offset: -1px;
         transition:
           background-color ease 0.24s,
           color ease 0.24s,
-          border ease 0.24s,
-          outline ease 0.24s;
+          outline-color ease 0.24s;
 
         & .selected-name {
           color: var(--primary);
@@ -48,14 +47,14 @@
   }
 
   & .select-kit.combo-box.tag-drop.has-selection .tag-drop-header {
-    border: 1px solid transparent;
+    border: none;
     outline: 1px solid var(--d-nav-border-color--active);
     transition:
       background-color ease 0.24s,
       color ease 0.24s,
-      border ease 0.24s,
-      outline ease 0.24s;
+      outline-color ease 0.24s;
     &:active {
+      outline-offset: -2px;
       outline: 2px solid var(--tertiary);
     }
   }

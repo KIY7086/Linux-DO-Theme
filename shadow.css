@@ -9,7 +9,8 @@
   --button-shadow-dark-without-bottom:
     2px 0 6px #00000018, 2px 0 6px #0000000a, inset 0 1px 1px #00000016;
   --button-shadow-dark-without-top:
-    0 2px 8px #0000004d, 0 1px 4px #00000033, inset 0 1px 4px #ffffff02;
+    0 2px 8px #0000004d, 0 1px 4px #00000033, inset 0 1px 4px #ffffff02,
+    0 -0.01px 6px #202020;
 
   --panel-shadow: 0 2px 3px #00000014, 0 4px 10px #0000000f;
   --panel-shadow-without-top: 0 2px 3px #00000014, 0 4px 6px #0000000a;
@@ -22,4 +23,7 @@
   --pebble-shadow:
     inset -2px -2px 3px #0000001e, inset 1px 1px 4px #ffffffb4,
     inset 1px 1px 3px #0000001a, 1px 1px 5px #0000000a;
+  --pebble-shadow-dark:
+    inset -1px -1px 2px #1e1e1e, inset 1px 2px 5px #ffffff4d,
+    inset 0 -1px 2px #27272741, inset 1px 1px 1px #323232;
 }

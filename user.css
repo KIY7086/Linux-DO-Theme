@@ -61,6 +61,28 @@
 
   & .user-content {
     background: none;
+    margin-top: 1em;
+
+    & .user-notifications-filter {
+      border-bottom: none;
+
+      & .select-kit.single-select.dropdown-select-box .select-kit-header {
+        border: none;
+        outline: 1px solid var(--d-sidebar-border-color);
+        outline-offset: -1px;
+        transition: outline-color 0.3s ease;
+        background-color: var(--surface-bg);
+        box-shadow: var(--button-shadow);
+
+        &:focus {
+          outline: 2px solid var(--tertiary);
+        }
+      }
+    }
+
+    & .user-stream .user-notifications-list {
+      border-top: none;
+    }
 
     & .user-stream .item,
     .user-stream .user-stream-item,
@@ -102,6 +124,16 @@
       border-top: none;
       box-shadow: var(--button-shadow-without-top);
       margin-top: 0;
+
+      & ul > li {
+        &:first-child a {
+          border-radius: 0px 0px 0px 6px;
+        }
+
+        &:last-child a {
+          border-radius: 0px 0px 6px 0px;
+        }
+      }
     }
   }
 
@@ -110,16 +142,6 @@
     border-radius: 8px;
     background-color: var(--surface-bg);
     margin-top: 10px;
-
-    & ul > li {
-      &:first-child a {
-        border-radius: 6px 0px 0px 6px;
-      }
-
-      &:last-child a {
-        border-radius: 0px 6px 6px 0px;
-      }
-    }
 
     & .navigation-controls {
       margin: 6px;
@@ -174,6 +196,24 @@
   }
 }
 
+.badge-group-list {
+  & .badge-card {
+    border-radius: 8px;
+    border: 1px solid var(--d-sidebar-border-color);
+    background-color: var(--surface-bg);
+
+    & .btn.no-text {
+      border: none;
+    }
+  }
+}
+
+html.scheme-dark {
+  .badge-group-list .badge-card {
+    background-color: var(--surface-bg-dark);
+  }
+}
+
 html.scheme-dark {
   .new-user-wrapper {
     &:has(.user-navigation-secondary) {
@@ -182,7 +222,6 @@ html.scheme-dark {
       }
 
       .user-navigation-secondary {
-        z-index: -1;
         box-shadow: var(--button-shadow-dark-without-top);
       }
     }
@@ -203,6 +242,15 @@ html.scheme-dark {
       & .primary .controls .btn {
         box-shadow: var(--button-shadow-dark);
       }
+    }
+
+    &
+      .user-content
+      .user-notifications-filter
+      .select-kit.single-select.dropdown-select-box
+      .select-kit-header {
+      background-color: var(--surface-bg-dark);
+      box-shadow: var(--button-shadow-dark);
     }
   }
 }

@@ -1,10 +1,10 @@
 .alert.alert-info {
   background-color: var(--ld-95);
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 8px 14px;
 
   #list-area .show-more & {
-    padding: 14px;
-    padding-left: 16px;
+    padding: 12px 14px;
     margin: 0 2px;
   }
 
@@ -37,14 +37,25 @@ html.scheme-dark {
 
   .alert.alert-info {
     background-color: var(--ld-bg);
+    color: var(--secondary);
 
     & .text {
-      color: var(--primary-200);
+      color: var(--secondary);
     }
 
     & a,
     &.clickable {
-      color: var(--ld-45);
+      color: var(--ld-50);
+    }
+  }
+
+  .alert.alert-warning {
+    background-color: var(--ld-bg);
+    color: var(--secondary);
+
+    & a,
+    &.clickable {
+      color: var(--ld-50);
     }
   }
 
