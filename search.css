@@ -73,8 +73,8 @@
           content: "";
           display: inline-block;
           margin: 0;
-          width: 14px;
-          height: 14px;
+          width: 1em;
+          height: 1em;
           background-color: currentColor;
           mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj4KICA8cGF0aCBkPSJNMjc4LjYgMjMzLjRjMTIuNSAxMi41IDEyLjUgMzIuOCAwIDQ1LjNsLTE2MCAxNjBjLTEyLjUgMTIuNS0zMi44IDEyLjUtNDUuMyAwcy0xMi41LTMyLjggMC00NS4zTDIxMC43IDI1NiA3My40IDExOC42Yy0xMi41LTEyLjUtMTIuNS0zMi44IDAtNDUuM3MzMi44LTEyLjUgNDUuMyAwbDE2MCAxNjB6Ij48L3BhdGg+Cjwvc3ZnPg==");
           mask-repeat: no-repeat;
