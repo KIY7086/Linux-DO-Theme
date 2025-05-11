@@ -398,6 +398,12 @@
   }
 }
 
+.small-action.onscreen-post {
+  & .topic-avatar {
+    border-top: none;
+  }
+}
+
 .ember-view.pinned-button .reason {
   width: 100%;
   justify-content: space-between;
