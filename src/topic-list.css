@@ -1,0 +1,59 @@
+.topic-list {
+  & .topic-list-header {
+    & tr {
+      border-bottom: none;
+      padding: 6px 8px;
+
+      & th {
+        padding-bottom: 0;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+
+  & .topic-list-body {
+    border-top: none;
+
+    & .topic-list-data {
+      padding: 10px 12px;
+    }
+  }
+
+  & tr td:first-of-type,
+  & .topic-list-item td:first-of-type {
+    transition: box-shadow 0.4s ease;
+  }
+
+  & .link-bottom-line .discourse-tag.box {
+    font-size: 0.96em;
+  }
+
+  & .d-icon.d-icon-far-square {
+    color: transparent;
+    width: 0.8em;
+    height: 0.8em;
+    mask-image: var(--question-not-solved);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--primary-high);
+  }
+}
+
+#list-area .show-more {
+  position: static;
+}
+
+.sticky-header .topic-list-header {
+  background: none;
+
+  & .topic-list-data.bulk-select {
+    padding-left: 0.67em;
+  }
+
+  & .topic-list-data.default {
+    padding: 0;
+  }
+}

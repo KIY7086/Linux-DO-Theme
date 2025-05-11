@@ -1,0 +1,75 @@
+.d-editor-preview:empty {
+  mask-image: var(--editor-empty-state);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: var(--secondary-medium);
+  max-width: 300px;
+  align-self: center;
+}
+
+#reply-control {
+  &.open .grippie {
+    padding: 0;
+    height: 4px;
+    background: none;
+    outline: 2px double var(--tertiary);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  & .title-input input {
+    border-radius: 6px;
+  }
+
+  & .select-kit .select-kit-header:not(.btn) {
+    border-radius: 6px;
+  }
+
+  & .d-editor-textarea-wrapper {
+    border-radius: 6px;
+    transition: outline-color 0.3s ease;
+    border: none;
+    outline: 1px solid var(--primary-400);
+    outline-offset: -1px;
+
+    &.in-focus {
+      outline-color: var(--tertiary);
+      outline-width: 2px;
+    }
+  }
+
+  & .d-editor-button-bar .btn {
+    border-radius: 6px;
+  }
+
+  & .save-or-cancel .btn {
+    border-radius: 6px;
+  }
+
+  & .submit-panel {
+    background-color: var(--secondary);
+  }
+}
+
+.composer-popup {
+  border-radius: 10px;
+  filter: drop-shadow(0 0.8px 1px rgba(0, 0, 0, 0.08))
+    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.06));
+
+  &.similar-topics {
+    background-color: whitesmoke;
+  }
+
+  & .btn.close {
+    font-size: 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+
+    & .d-button-label {
+      display: none;
+    }
+  }
+}

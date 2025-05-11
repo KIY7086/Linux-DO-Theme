@@ -1,0 +1,5 @@
+.chat-message-separator-date
+  .chat-message-separator__text-container.is-pinned
+  .chat-message-separator__text {
+  background-color: var(--secondary);
+}

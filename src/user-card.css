@@ -1,0 +1,23 @@
+.fk-d-menu__inner-content:has(.user-card) {
+  border-radius: 10px;
+  border: none;
+
+  & .user-card {
+    border-radius: 10px !important;
+
+    & .card-content {
+      border-radius: 10px;
+
+      & .badge-section {
+        & .user-card-badge-link .user-badge {
+          border-radius: 6px;
+        }
+
+        & .more-user-badges a.ember-view {
+          border-radius: 6px;
+          background-color: var(--surface-bg);
+        }
+      }
+    }
+  }
+}

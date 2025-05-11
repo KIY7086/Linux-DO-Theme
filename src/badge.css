@@ -1,0 +1,65 @@
+.container.show-badge,
+.container.badges {
+  padding: 14px 10px;
+}
+
+.badge-group-list,
+.show-badge-details {
+  & .badge-card {
+    border-radius: 8px;
+    border: 1px solid var(--d-sidebar-border-color);
+    background-color: var(--surface-bg);
+
+    & .btn.no-text {
+      border: none;
+    }
+
+    & .check-display.status-checked {
+      border-radius: 6px;
+      top: 4px;
+      right: 4px;
+    }
+  }
+}
+
+.show-badge-details {
+  & .badge-set-title {
+    padding: 1em 1.1em;
+    border-radius: 8px;
+
+    & .select-kit .select-kit-header:not(.btn) {
+      border-radius: 8px;
+      outline: 1px solid var(--d-sidebar-border-color);
+      border: none;
+      outline-offset: -1px;
+      transition: outline-color 0.3s ease;
+
+      &:focus {
+        outline: 2px solid var(--tertiary);
+        outline-offset: -2px;
+      }
+    }
+  }
+
+  & .grant-info-item {
+    padding: 1em 1.1em;
+    margin: 0;
+    font-size: var(--font-up-1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & .btn {
+      font-size: var(--font-0);
+      padding: 0.4em 0.55em;
+      transform: scale(0.9);
+    }
+  }
+}
+
+html.scheme-dark {
+  .badge-group-list .badge-card,
+  .show-badge-details .badge-card {
+    background-color: var(--surface-bg-dark);
+  }
+}
