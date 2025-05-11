@@ -75,7 +75,7 @@
 - **user-card.css**: 用户卡片样式
 - **chat.css**: 聊天界面样式
 - **font.css**: （可选）字体设置
-- **addition.css**: （可选）界面简化
+- **addition.css**: 暂无，之后补充
 
 ## 许可证
 
