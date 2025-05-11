@@ -399,7 +399,8 @@
 }
 
 .small-action.onscreen-post {
-  & .topic-avatar {
+  & .topic-avatar,
+  & .small-action-desc {
     border-top: none;
   }
 }
