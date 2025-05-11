@@ -27,58 +27,20 @@
 
 将 `/theme-watcher.user.js` 文件安装到 Tampermonkey 中，该脚本会监测论坛的主题设置变化。（今后可能会有更优雅的实现方式）
 
-### 3. 在 Stylus 中导入 CSS 文件
+### 3. 在 Stylus 中添加样式
 
-在 Stylus 中新建样式，使用 `@import` 导入以下核心 CSS 文件：
-
-```css
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/variable.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/global.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/header.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/sidebar.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/topic.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/topic-list.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/button.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/panel.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/user.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/search.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/home.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/editor.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/badge.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/dialog.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/shadow.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/alert.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/icon-color.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/user-card.css');
-@import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/chat.css');
-```
-
-### 4. 可选 CSS 文件
-
-根据个人需求，可选择添加以下 CSS 文件：
-
-- **font.css**: 将论坛字体设为"霞鹜新晰黑"（字体已内嵌，无需额外安装）
-  ```css
-  @import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/font.css');
-  ```
-
-- **addition.css**: 移除部分无用按钮和始皇语录
-  ```css
-  @import url('https://raw.githubusercontent.com/KIY7086/Linux-DO-Theme/main/src/addition.css');
-  ```
-
-### 5. 离线使用方式
-
-如果不想联网加载CSS文件，可以直接使用项目中的合并CSS文件：
+在 Stylus 中新建样式：
 
 1. 复制本项目的 `/dist` 目录中的以下文件之一：
    - **standard.css**: 标准版（包含所有核心样式）
    - **nofont.css**: 不包含自定义字体的版本
    - **noadditional.css**: 不包含界面简化功能的版本
 
-2. 在Stylus中创建新样式，将下载的CSS文件内容完整粘贴进去
+2. 在Stylus中创建新样式，将复制的CSS文件内容完整粘贴进去
 
 3. 应用范围设置为 `https://linux.do/*`
+
+> **重要提示**：请勿使用 `@import` 语句导入CSS文件，该方法无法生效！必须直接复制完整的CSS内容。
 
 ## 文件说明
 
