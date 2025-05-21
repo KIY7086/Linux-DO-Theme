@@ -33,12 +33,12 @@
   --background: #f7f7f7;
   --background-dark: #222222;
 
-  --editor-empty-state: url("");
-  --checkbox-empty: url("");
-  --checkbox-check: url("");
-  --lucide-at: url("");
-  --chat-bot: url("");
-  --arrow-right: url("");
-  --arrow-down: url("");
-  --question-not-solved: url("");
+  --editor-empty-state: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/editor-empty-state.svg");
+  --checkbox-empty: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/checkbox-empty.svg");
+  --checkbox-check: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/checkbox-check.svg");
+  --lucide-at: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/lucide-at.svg");
+  --chat-bot: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/chat-bot.svg");
+  --arrow-right: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/arrow-right.svg");
+  --arrow-down: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/arrow-down.svg");
+  --question-not-solved: url("https://github.com/KIY7086/Linux-DO-Theme/raw/refs/heads/main/icons/question-not-solved.svg");
 }

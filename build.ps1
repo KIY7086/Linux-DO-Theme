@@ -9,12 +9,7 @@ $noFontFiles = $cssFiles | Where-Object { $_.Name -ne "font.css" }
 Get-Content -Path ($noFontFiles | Select-Object -ExpandProperty FullName) | 
     Out-File -FilePath "temp.css" -Encoding utf8
 postcss "temp.css" --use postcss-import autoprefixer cssnano --output "dist/nofont.css"
-$noAdditionalFiles = $cssFiles | Where-Object { $_.Name -ne "additional.css" }
-Get-Content -Path ($noAdditionalFiles | Select-Object -ExpandProperty FullName) | 
-    Out-File -FilePath "temp.css" -Encoding utf8
-postcss "temp.css" --use postcss-import autoprefixer cssnano --output "dist/noadditional.css"
 Remove-Item -Path "temp.css"
 Write-Host "CSS build completed. All files are minified and placed in the dist directory:"
 Write-Host "- standard.css (all CSS files from src directory)"
 Write-Host "- nofont.css (excludes font.css)"
-Write-Host "- noadditional.css (excludes additional.css)"
