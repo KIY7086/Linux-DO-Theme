@@ -237,6 +237,20 @@
       }
     }
 
+    & .post-voting-comments {
+      & .post-voting-comment-add-link {
+        padding: 10px 12px;
+      }
+
+      & .post-voting-comments-menu-composer {
+        padding: 10px;
+
+        & .post-voting-comment-composer-textarea {
+          border-radius: 6px;
+        }
+      }
+    }
+
     & .embedded-posts.bottom .collapse-up {
       border-radius: 6px;
     }

@@ -30,6 +30,14 @@
   color: var(--ld-80);
 }
 
+div.row:has( .post-notice.custom) {
+  border-radius: 8px;
+}
+
+.post-notice.custom {
+  margin: 0;
+}
+
 html.scheme-dark {
   #list-area .show-more {
     background-color: var(--background-dark);

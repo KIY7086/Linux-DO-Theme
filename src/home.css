@@ -106,7 +106,7 @@
 }
 
 #navigation-bar {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   background-color: var(--surface-bg);
   border: 1px solid var(--d-sidebar-border-color);
   border-radius: 8px;

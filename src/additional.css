@@ -1,0 +1,5 @@
+.house-creative {
+    & div {
+        border-radius: 8px;
+    }
+}
