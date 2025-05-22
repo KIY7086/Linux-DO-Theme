@@ -169,6 +169,10 @@
         margin-right: 6px;
         color: var(--ld-70);
       }
+
+      .policy {
+        border-radius: 6px;
+      }
     }
 
     & .lightbox-wrapper {
@@ -356,9 +360,12 @@
       padding: 0.54em 5px;
       display: flex;
       align-items: center;
+      transition: color 0.2s ease-in-out,
+                  opacity 0.2s ease-in-out;
 
       & .d-icon {
         transition: none;
+        transition: color 0.2s ease-in-out;
         margin-right: 6px;
         color: var(--primary);
         padding-bottom: 2px;
@@ -374,6 +381,8 @@
 
       &:hover {
         box-shadow: none;
+        background: none;
+        opacity: 0.85;
       }
 
       &.active {
@@ -386,6 +395,10 @@
         & .d-icon {
           margin-right: 5px;
           color: var(--ld-70);
+        }
+
+        &:hover {
+          opacity: 0.9;
         }
       }
     }
