@@ -87,7 +87,7 @@ img.emoji {
   margin-bottom: 1px;
 }
 
-.username {
+/* .name:not(:empty) {
   display: flex !important;
   align-items: center !important;
   margin-left: 1px;
@@ -104,7 +104,7 @@ img.emoji {
     background-color: currentColor;
     opacity: 0.6;
   }
-}
+} */
 
 body.has-sidebar-page
   #main-outlet-wrapper:not(:has(.topic-above-post-stream-outlet)) {
