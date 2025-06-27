@@ -1,5 +1,7 @@
 .discourse-no-touch .drop-down-mode .d-header-icons {
   & .btn-flat {
+    border: none;
+    border-radius: 6px !important;
     transition:
       box-shadow 0.3s ease,
       background 0.4s ease;
@@ -7,9 +9,14 @@
 
   & .active .icon,
   & .header-color-scheme-toggle .-expanded {
-    border: 1px solid var(--d-sidebar-border-color);
+    border: none;
     box-shadow: var(--pebble-shadow);
     background-color: var(--surface-bg);
+  }
+
+  & .icon:hover,
+  & .icon:focus {
+    border: none;
   }
 }
 
